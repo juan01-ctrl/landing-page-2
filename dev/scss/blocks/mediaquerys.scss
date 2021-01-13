@@ -1,5 +1,12 @@
 @include media-tablet {
+  //HOME
+
+  .hero-image-title{
+    font-size: 7.5vw;
+  }
   //SERVICES
+
+  
   .services > .container {
     display: grid;
     grid-template-columns: repeat(2, 45%);
