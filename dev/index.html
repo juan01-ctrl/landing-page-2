@@ -541,9 +541,9 @@
         <section class="contact">
             <div class="contact-form-container">
                <form class="contact-form" action="">
-                   <input class="contact-item" type="text" name="name" placeholder="Ingresa tu nombre">
-                   <input class="contact-item" type="email" name="email" placeholder="Ingresa tu correo">
-                   <textarea class="contact-item textarea" name="messaje" id="contact-messaje"placeholder="Dejame tus comentarios"></textarea>
+                   <input class="contact-item" type="text" name="name" placeholder="Ingresa tu nombre" title="El nombre introducido no es valido" required>
+                   <input class="contact-item" type="email" name="email" placeholder="Ingresa tu correo" required title="El mail introducido no es valido">
+                   <textarea class="contact-item textarea" name="messaje" id="contact-messaje"placeholder="Dejame tus comentarios" required></textarea>
                    <button type="submit" class="button-form">ENVIAR MENSAJE</button>
                </form>
             </div>
