@@ -1,4 +1,8 @@
 .contact{
+    &-info{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     &-card{
         width: 90%;
         padding: 1rem;
@@ -6,7 +10,12 @@
         height: 11em;
         display: flex;
         align-items: center;
-        @include boxShadow
+        cursor: pointer;
+        transition: transform .3s;
+        @include boxShadow;
+        &:hover{
+            transform:scale(1.1)
+        }
     }
     .card-content{
         margin:0 auto;
@@ -17,7 +26,8 @@
         height: 100%;
         width: 100%;
 
-        a{
+        a,
+        address{
             color: $grayDarkColor;
         }
 
@@ -27,7 +37,9 @@
             height: 2.7rem;
         }
         .card-social-icons img{
-           width: 18px;
+           width: 40px;
+           padding-right: .3rem;
+           padding-left: .3rem;
         }
     }
 }
